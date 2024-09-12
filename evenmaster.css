@@ -1,0 +1,11 @@
+#cuerpo{
+    background-color: black;
+}
+.fondo{
+    background-color: red;
+}
+.titulo{
+    color: white;
+    text-align: center;
+    font-family: cursive;
+}
