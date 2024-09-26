@@ -1,0 +1,57 @@
+.container{
+display: flex;
+height: 100vh;
+}
+.menu{
+    background-color: aliceblue;
+    width: 300px;
+    flex-direction: column;
+    display: flex;
+    justify-content:space-between;
+    padding: 15px;
+} 
+.contenido{
+    flex: 1;
+    background: rgb(100, 102, 197);
+    background: linear-gradient(100deg, rgba(60, 125, 136, 0.942) 0%, rgb(117, 72, 72) 100%);
+    padding: 40px;
+}
+.logo{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.menulateral a{
+    color: rgb(22, 21, 21);
+    padding: 10px;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+}
+.menulateral a:hover{
+background-color: rgba(59, 126, 153, 0.884);
+}
+.cerrarS {
+    background-color: rgb(181, 180, 184);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 20px;
+}
+.cerrarS:hover{
+    background-color: rgb(79, 110, 156);
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.titulo h1{
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+.titulo{
+    margin-top: 20px;
+}
