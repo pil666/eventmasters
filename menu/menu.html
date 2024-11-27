@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<<<<<<< HEAD
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Inicio - EventMaster</title>
+    <link rel="stylesheet" href="menu.css" />
+</head>
+<body>
+    <!-- Botón de hamburguesa -->
+    <button class="menu-hamburguesa" id="menu-toggle">
+        ☰
+    </button>
+
+    <!-- Fondo oscuro -->
+    <div class="fondo-oscuro" id="fondo-oscuro"></div>
+
+    <!-- Menú lateral -->
+    <div class="menu-lateral" id="menu-lateral">
+        <div class="logo">
+            <img src="../logo/logo.jpg" alt="Logo de EventMaster" />
+        </div>
+        <nav class="menu">
+            <a href="./evento/evento.html">Inicio</a>
+            <a href="./paginas/quienessomos.html">Quiénes somos</a>
+            <div class="menu-item">
+                <a href="#" class="menu-toggle">Eventos empresariales</a>
+                <div class="submenu">
+                    <a href="#">Conferencias</a>
+                    <a href="#">Capacitaciones</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-toggle">Eventos personales</a>
+                <div class="submenu">
+                    <a href="#">Bodas</a>
+                    <a href="#">Cumpleaños</a>
+                </div>
+            </div>
+            <a href="./paginas/eventosenespana.html">Eventos en España</a>
+            <a href="./blog/blog.html">Blog</a>
+            <a href="./paginas/contacto.html">Contacto</a>
+        </nav>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="contenido-principal">
+        <div class="titulo">
+            <h1>Bienvenido a EventMaster</h1>
+            <p>Realiza el evento de tus sueños</p>
+        </div>
+        <div class="boton">
+            <a href="./inicio/inicio.html" class="btn-iniciar">Iniciar Sesión</a>
+        </div>
+    </div>
+
+    <!-- Script para funcionalidad del menú -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuLateral = document.getElementById('menu-lateral');
+        const fondoOscuro = document.getElementById('fondo-oscuro');
+
+        menuToggle.addEventListener('click', () => {
+            menuLateral.classList.toggle('activo');
+            fondoOscuro.classList.toggle('activo');
+            menuToggle.classList.toggle('oculto');
+        });
+
+        fondoOscuro.addEventListener('click', () => {
+            menuLateral.classList.remove('activo');
+            fondoOscuro.classList.remove('activo');
+            menuToggle.classList.remove('oculto');
+        });
+    </script>
+</body>
+</html>
+=======
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Eventos</title>
+    <link rel="stylesheet" href="../menu/menu.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" class="nav-link">Inicio</a></li>
+                <li><a href="#" class="nav-link">Eventos</a></li>
+                <li><a href="#" class="nav-link">Registro</a></li>
+                <li><a href="#" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <h1 class="wel_text">Eventos Próximos</h1>
+            <p class="para">Descubre lo que tenemos planeado para ti.</p>
+        </div>
+        <div class="events">
+            <h2 class="events-title">Eventos Destacados</h2>
+            <ul class="event-list">
+                <li class="event-item">Evento 1: Fecha - Descripción breve.</li>
+                <li class="event-item">Evento 2: Fecha - Descripción breve.</li>
+                <li class="event-item">Evento 3: Fecha - Descripción breve.</li>
+                <li class="event-item">Evento 4: Fecha - Descripción breve.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+>>>>>>> f5508f867f7dc9401509c4469b4a8f9b63c453c2

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Eventos</title>
+    <link rel="stylesheet" href="eventos.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Barra de navegación -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" class="nav-link">Inicio</a></li>
+                <li><a href="#" class="nav-link">Eventos</a></li>
+                <li><a href="#" class="nav-link">Registro</a></li>
+                <li><a href="#" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Banner de bienvenida -->
+        <div class="banner">
+            <h1 class="wel_text">Eventos Próximos</h1>
+            <p class="para">Descubre lo que tenemos planeado para ti.</p>
+        </div>
+
+        <!-- Formulario para agregar evento -->
+        <div class="add-event">
+            <h2>Agregar un Evento</h2>
+            <form id="event-form">
+                <input type="text" id="event-name" placeholder="Nombre del evento" required>
+                <input type="date" id="event-date" required>
+                <textarea id="event-description" placeholder="Descripción breve" required></textarea>
+                <button type="submit" class="btn-add-event">Agregar Evento</button>
+            </form>
+        </div>
+
+        <!-- Sección de eventos -->
+        <div class="events">
+            <h2 class="events-title">Eventos Destacados</h2>
+            <ul id="event-list" class="event-list">
+                <li class="event-item">Evento 1: Fecha - Descripción breve.</li>
+                <li class="event-item">Evento 2: Fecha - Descripción breve.</li>
+                <li class="event-item">Evento 3: Fecha - Descripción breve.</li>
+                <li class="event-item">Evento 4: Fecha - Descripción breve.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="eventos.js"></script>
+</body>
+
+</html>
